@@ -7,3 +7,8 @@
 		<li> No Authors Registered.</li>
 	{{/each}}
 </ul>
+
+<h4>Create Author</h4>
+<form {{action 'postAuthor' on='submit'}}>
+	<p>{{input type="text" value=nickname}}<button>Create</button></p>
+</form>
