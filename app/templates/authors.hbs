@@ -1,2 +1,9 @@
 {{outlet}}
 <h5> Hello </h5>
+<ul>
+	{{#each model as |author|}}
+		<li>{{author.nickname}}</li>
+	{{else}}
+		<li> No Authors Registered.</li>
+	{{/each}}
+</ul>
